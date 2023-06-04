@@ -17,8 +17,10 @@ return new class extends Migration
             $table->text("desc");
             $table->string("image",255)->nullable();
             $table->decimal("price",8,2);
+
             $table->foreignId("cat_id")->constrained()->onUpdate('cascade')
             ->onDelete('cascade');
+            
             $table->foreignId("user_id")->constrained()->onUpdate('cascade')
             ->onDelete('cascade');
 

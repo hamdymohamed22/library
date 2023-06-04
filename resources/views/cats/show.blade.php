@@ -8,6 +8,7 @@ show one
 
 
 related books :<br>
+
 @foreach ($category->books as $book )
 
 <ul>
